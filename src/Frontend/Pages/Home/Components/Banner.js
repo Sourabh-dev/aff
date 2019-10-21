@@ -2,7 +2,6 @@ import React from 'react';
 
 
 function App() {
-	var bannerImages = ['images/bg_1.jpg',  'images/bg_2.jpg', 'images/bg_3.jpg'];
 	var BASE_URL ="#"
 	var bg1 = require('../../../../images/bg_1.jpg')
 	var bg2 = require('../../../../images/bg_2.jpg')
