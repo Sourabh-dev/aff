@@ -2,6 +2,7 @@ import React from 'react';
 
 function App() {
   var BASE_URL = "#";
+  var present = window.location.pathname;
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -16,8 +17,7 @@ function App() {
               <li className="nav-item active"><a href={BASE_URL} className="nav-link">Home</a></li>
               <li className="nav-item"><a href={BASE_URL} className="nav-link">Rooms</a></li>
               <li className="nav-item"><a href={BASE_URL} className="nav-link">Services</a></li>
-              <li className="nav-item"><a href={BASE_URL} className="nav-link">About Us</a></li>
-              <li className="nav-item"><a href={BASE_URL} className="nav-link">Blog</a></li>
+              <li className="nav-item" {present == '/about' ? 'active' : ''}><a href='/about' className="nav-link">About Us</a></li>
               <li className="nav-item"><a href={BASE_URL} className="nav-link">Contact</a></li>
             </ul>
           </div>
